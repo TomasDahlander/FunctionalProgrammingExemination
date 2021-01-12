@@ -10,20 +10,27 @@ public class ChristmasTerminal {
 
     public static void main(String[] args) {
         map = hashMap.getMap();
-
         while(true){
-            String input = JOptionPane.showInputDialog("Ange namn på en undersåte för att få en lista på alla dennes chefer:");
-            if(input == null) break;
-            List<String> originalList = new ArrayList<>();
-            System.out.println(getSubjects(originalList,input));
+            try {
+                String input = JOptionPane.showInputDialog("Ange namn på en undersåte för att\nfå en lista på alla dennes chefer:").trim();
+                if(input.isEmpty()) {
+                    System.out.println("Du måste ange minst ett tecken...");
+                    continue;
+                }
+                List<String> originalList = new ArrayList<>();
+                System.out.println(getSubjects(originalList, input));
+            } catch(NullPointerException e){
+                break;
+            }
         }
     }
+
     public static List<String> getSubjects(List<String> list, String subject){
         String boss = map.get(subject.substring(0,1).toUpperCase()+subject.substring(1).toLowerCase());
         if(boss == null) return list;
         else {
             list.add(boss);
-            return list = getSubjects(list,boss);
+            return getSubjects(list,boss);
         }
     }
 }
