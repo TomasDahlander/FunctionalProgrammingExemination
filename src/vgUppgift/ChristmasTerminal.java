@@ -16,7 +16,6 @@ public class ChristmasTerminal {
             if(input == null) break;
             List<String> originalList = new ArrayList<>();
             System.out.println(getSubjects(originalList,input));
-            originalList.clear();
         }
     }
     public static List<String> getSubjects(List<String> list, String subject){
@@ -28,14 +27,3 @@ public class ChristmasTerminal {
         }
     }
 }
-/*
-Tomtarna på Nordpolen har en strikt chefs-hierarki:
-Högsta chefen för allt är "Tomten"
-Under "Tomten" jobbar "Glader" och "Butter"
-Under "Glader" jobbar "Tröger", "Trötter" och "Blyger"
-Under "Butter" jobbar "Rådjuret", "Nyckelpigan", "Haren" och "Räven"
-Under "Trötter" jobbar "Skumtomten"
-Under "Skumtomten" jobbar "Dammråttan"
-Under "Räven" jobbar "Gråsuggan" och "Myran"
-Under "Myran" jobbar "Bladlusen"
- */
