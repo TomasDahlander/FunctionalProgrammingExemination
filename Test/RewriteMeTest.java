@@ -4,14 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 import java.util.Map;
 
-
-
 public class RewriteMeTest {
 
     public Database database = new Database();
     public List<Question> questions = database.getQuestions();
     RewriteMe x = new RewriteMe();
-
 
     @Test
     final void getAmountOfQuestionsInDatabaseTest(){
@@ -58,9 +55,6 @@ public class RewriteMeTest {
         assertTrue(answeOptions.contains("Guld"));
         assertEquals(answeOptions.size(), 15);
     }
-
-
-
 
     @Test
     final void getAllQuestionStringsBelongingACategoryTest(){
