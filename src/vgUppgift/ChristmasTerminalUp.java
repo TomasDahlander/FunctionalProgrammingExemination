@@ -3,9 +3,9 @@ package vgUppgift;
 import javax.swing.*;
 import java.util.*;
 
-public class ChristmasTerminal {
+public class ChristmasTerminalUp {
 
-    static ChristmasDatabase hashMap = new ChristmasDatabase();
+    static ChristmasDatabaseUp hashMap = new ChristmasDatabaseUp();
     static Map<String, String> map;
 
     public static void main(String[] args) {

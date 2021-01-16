@@ -3,11 +3,11 @@ package vgUppgift;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ChristmasDatabase {
+public class ChristmasDatabaseUp {
 
-    private Map<String, String> map = new HashMap<>();
+    private final Map<String, String> map = new HashMap<>();
 
-    public ChristmasDatabase(){
+    public ChristmasDatabaseUp(){
         map.put("Bladlusen","Myran");
         map.put("Gråsuggan","Räven");
         map.put("Myran","Räven");
@@ -28,14 +28,3 @@ public class ChristmasDatabase {
         return map;
     }
 }
-/*
-Tomtarna på Nordpolen har en strikt chefs-hierarki:
-Högsta chefen för allt är "Tomten"
-Under "Tomten" jobbar "Glader" och "Butter"
-Under "Glader" jobbar "Tröger", "Trötter" och "Blyger"
-Under "Butter" jobbar "Rådjuret", "Nyckelpigan", "Haren" och "Räven"
-Under "Trötter" jobbar "Skumtomten"
-Under "Skumtomten" jobbar "Dammråttan"
-Under "Räven" jobbar "Gråsuggan" och "Myran"
-Under "Myran" jobbar "Bladlusen"
- */
